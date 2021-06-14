@@ -104,6 +104,13 @@ func Sum(ints ...int) (out int) {
 	return
 }
 
+func SumFloats(floats ...float64) (out float64) {
+	for _, v := range floats {
+		out += v
+	}
+	return
+}
+
 func Product(ints ...int) (out int) {
 	if len(ints) < 2 {
 		return -1
